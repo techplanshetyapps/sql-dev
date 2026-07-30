@@ -1,5 +1,3 @@
-SELECT 
-    ReferenceID AS ID, 
-    ColumnName AS Name
+SELECT *
 FROM TableName
 WHERE FilterColumn >= 7;
