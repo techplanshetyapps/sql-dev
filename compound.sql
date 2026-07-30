@@ -1,0 +1,6 @@
+CREATE TABLE (
+    CONSTRAINT CHECK ()
+);
+
+INSERT INTO () 
+VALUES ();
