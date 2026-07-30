@@ -1,4 +1,4 @@
-SELECT COUNT(*) AS
-FROM
-GROUP BY
-ORDER BY DESC ASC
+SELECT ColumnName, COUNT(*) AS SummaryCount
+FROM TableName
+GROUP BY ColumnName
+ORDER BY SummaryCount DESC, ColumnName ASC;
