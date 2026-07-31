@@ -1,15 +1,14 @@
-CREATE SEQUENCE
+CREATE SEQUENCE SchemaName.SequenceName
     AS INT
-    START WITH
-    INCREMENT BY
-    MINVALUE
-    MAXVALUE;
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    MAXVALUE 1000;
 
-CREATE TABLE (
-    INT DEFAULT
-        NEXT VALUE FOR
+CREATE TABLE SchemaName.TableName (
+    IDColumn INT DEFAULT (NEXT VALUE FOR SchemaName.SequenceName),
+    DataColumn VARCHAR(100)
 );
 
-UPDATE
-SET
-    = NEXT VALUE FOR;
+UPDATE SchemaName.TableName
+SET IDColumn = NEXT VALUE FOR SchemaName.SequenceName;
