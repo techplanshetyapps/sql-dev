@@ -1,6 +1,12 @@
 SELECT 
+    ReferenceID, 
+    ColumnName, 
+    FilterColumn
 FROM (
     SELECT 
-    FROM 
-    WHERE  >= (SELECT AVG() FROM )
-) AS;
+        ReferenceID, 
+        ColumnName, 
+        FilterColumn 
+    FROM TableName 
+    WHERE FilterColumn >= (SELECT AVG(FilterColumn) FROM TableName)
+) FilteredTable;
