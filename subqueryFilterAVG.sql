@@ -1,0 +1,6 @@
+SELECT 
+FROM (
+    SELECT 
+    FROM 
+    WHERE  >= (SELECT AVG() FROM )
+) AS;
